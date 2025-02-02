@@ -1,0 +1,1 @@
+npx react-native-windows-codegen --libraryName "rn77" --file .\src\NativeRn77.ts --outputDirectory .\windows\rn77\codegen-jsi --modulesCxx

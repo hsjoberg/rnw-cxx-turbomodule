@@ -8,6 +8,8 @@
 
 #include "NativeModules.h"
 
+#include "../../../windows/rn77/rn77-jsi.h"
+
 // A PackageProvider containing any turbo modules you define within this app project
 struct CompReactPackageProvider
     : winrt::implements<CompReactPackageProvider, winrt::Microsoft::ReactNative::IReactPackageProvider> {
@@ -39,6 +41,9 @@ _Use_decl_annotations_ int CALLBACK WinMain(HINSTANCE instance, HINSTANCE, PSTR 
   RegisterAutolinkedNativeModulePackages(settings.PackageProviders());
   // Register any native modules defined within this app project
   settings.PackageProviders().Append(winrt::make<CompReactPackageProvider>());
+
+  // Manually link the JSI TurboModule
+  settings.PackageProviders().Append(winrt::make<facebook::react::Rn77PackageProvider>());
 
 #if BUNDLE
   // Load the JS bundle from a file (not Metro):

@@ -6,4 +6,4 @@ export interface Spec extends TurboModule {
   hello(a: string): string;
 }
 
-export default TurboModuleRegistry.getEnforcing<Spec>('Rn77');
+export default TurboModuleRegistry.getEnforcing<Spec>('Rn77Cxx');

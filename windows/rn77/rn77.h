@@ -10,25 +10,25 @@
 
 #include "NativeModules.h"
 
-namespace winrt::rn77
-{
+// namespace winrt::rn77
+// {
 
-REACT_MODULE(Rn77)
-struct Rn77
-{
-  using ModuleSpec = rn77Codegen::Rn77Spec;
+// REACT_MODULE(Rn77)
+// struct Rn77
+// {
+//   using ModuleSpec = rn77Codegen::Rn77Spec;
 
-  REACT_INIT(Initialize)
-  void Initialize(React::ReactContext const &reactContext) noexcept;
+//   REACT_INIT(Initialize)
+//   void Initialize(React::ReactContext const &reactContext) noexcept;
 
-  REACT_SYNC_METHOD(multiply)
-  double multiply(double a, double b) noexcept;
+//   REACT_SYNC_METHOD(multiply)
+//   double multiply(double a, double b) noexcept;
 
-  REACT_SYNC_METHOD(hello)
-  std::string hello(std::string a) noexcept;
+//   REACT_SYNC_METHOD(hello)
+//   std::string hello(std::string a) noexcept;
 
-private:
-  React::ReactContext m_context;
-};
+// private:
+//   React::ReactContext m_context;
+// };
 
-} // namespace winrt::rn77
+// } // namespace winrt::rn77

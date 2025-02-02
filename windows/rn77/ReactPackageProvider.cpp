@@ -5,7 +5,7 @@
 #include "ReactPackageProvider.g.cpp"
 #endif
 
-#include "rn77.h"
+// #include "rn77.h"
 
 using namespace winrt::Microsoft::ReactNative;
 
@@ -14,7 +14,7 @@ namespace winrt::rn77::implementation
 
 void ReactPackageProvider::CreatePackage(IReactPackageBuilder const &packageBuilder) noexcept
 {
-  AddAttributedModules(packageBuilder, true);
+  // AddAttributedModules(packageBuilder, true);
 }
 
 } // namespace winrt::rn77::implementation
